@@ -1,0 +1,948 @@
+body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background: url("../images/bg.jpeg") no-repeat center center fixed;
+}
+
+.header {
+    width: 100%;
+    color: white;
+    min-height: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header .navbar-nav>li>a {
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.header .navbar {
+    margin-bottom: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    border-bottom: none;
+    background-color: transparent;
+    min-width: 300px;
+    border: none;
+}
+
+.header .navbar-default .navbar-nav>.open>a,
+.header .navbar-default .navbar-nav>.open>a:focus,
+.header .navbar-default .navbar-nav>.open>a:hover {
+    color: #ccc;
+    background-color: transparent;
+}
+
+.header .nav>li>a:focus,
+.header .nav>li>a:hover {
+    color: #ccc;
+    background-color: transparent;
+}
+
+.header .navbar-nav>li {
+    margin-right: 20px;
+}
+
+.header .navbar-nav {
+    margin-top: 12px;
+}
+
+.header .navbar-toggle {
+    background-color: transparent !important;
+    margin-top: 20px;
+    border: 1px solid #fff;
+}
+
+.header .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.header .navbar-brand {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 150px;
+    height: 50px;
+    background-size: contain; /* Ensures the logo is fully visible */
+    background-repeat: no-repeat;
+}
+
+.header .btn-primary {
+    color: #fff;
+    background-color: transparent;
+    border-color: #fffbfb !important;
+    outline: none;
+    margin-right: 20px;
+    margin-top: 20px;
+    font-size: 24px;
+    padding: 18px 24px;
+    transition: 0.2s background-color;
+}
+
+.header .btn-primary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.header .btn-primary:active {
+    transform: translateY(1px);
+}
+
+.content {
+    min-height: calc(100vh-100px);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.details-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Reduce the gap between elements */
+    height: auto; /* Adjust height based on content */
+    width: 35%;
+    background-color: rgba(255, 255, 255, 0.13);
+    position: relative; /* Ensure positioning is relative to parent */
+    margin: 20px auto; /* Center and add margin */
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 30px 20px; /* Reduce padding for a tighter layout */
+    box-sizing: border-box; /* Include padding in width/height */
+}
+
+.details-container p,h2 {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 22px;
+    max-width: 660px;
+    margin-top: 20px;
+    font-weight: normal;
+    line-height: 1.5;
+}
+.details-container h2{
+    color: white;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.profile-picture-container {
+    flex: 0 0 auto; /* Prevent resizing */
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 200px; /* Fixed width */
+    height: 300px; /* Fixed height */
+    overflow: hidden; /* Ensure the image doesn't overflow */
+    display: flex;
+    align-items: center; /* Center the image vertically */
+    justify-content: center; /* Center the image horizontally */
+}
+.profile-picture {
+    width: 100%; /* Make the image fill the container */
+    height: 100%; /* Make the image fill the container */
+    object-fit: cover; /* Ensures the image covers the container */
+}
+
+.user-details {
+    flex: 1;
+    margin: auto;
+}
+
+.punch-button-container form {
+    margin: 0; /* Remove any default margin */
+}
+
+.punch-button-container button {
+    width: auto; /* Ensure buttons are the same width */
+    padding: 14px; /* Adjust padding to fit the content */
+}
+button.punch-button.red {
+    background: #dc3545 !important; /* Red background */
+    color: #fff;
+}
+
+/* Disabled State */
+button.punch-button:disabled {
+    background: #e2e2e2;
+    color: #b0b0b0;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.leave-container {
+    height: auto; /* Adjust height based on content */
+    width: 95%;
+    background-color: rgba(255,255,255,0.13);
+    position: relative; /* Ensure positioning is relative to parent */
+    margin: 20px auto; /* Center and add margin */
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+    box-sizing: border-box; /* Include padding in width/height */
+}
+
+.leave-container h1 {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.leave-container h2{
+    margin: 0;
+    text-align: left;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.leave-container form{
+    margin-top: 10px;
+}
+
+.leave-records {
+    height: auto; /* Adjust height based on content */
+    width: 95%;
+    background-color: rgba(255, 255, 255, 0.13);
+    position: relative; /* Ensure positioning is relative to parent */
+    margin: 20px auto; /* Center and add margin */
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 50px 35px;
+    box-sizing: border-box; /* Include padding in width/height */
+}
+
+.leave-records p{
+    color: black;
+    font-size: 28px;
+}
+
+/* Heading Styles */
+.leave-records h1 {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.leave-records h2 {
+    margin: 0;
+    text-align: left;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.create-staff-container {
+    height: auto; /* Adjust height based on content */
+    width: 95%;
+    background-color: rgba(255,255,255,0.13);
+    position: relative; /* Ensure positioning is relative to parent */
+    margin: 20px auto; /* Center and add margin */
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+    box-sizing: border-box; /* Include padding in width/height */
+}
+
+.create-staff-container h1 {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.create-staff-container h2{
+    margin: 0;
+    text-align: left;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.create-staff-container form{
+    margin-top: 10px;
+}
+
+.promote-staff-container {
+    height: auto; /* Adjust height based on content */
+    width: 95%;
+    background-color: rgba(255,255,255,0.13);
+    position: relative; /* Ensure positioning is relative to parent */
+    margin: 20px auto; /* Center and add margin */
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+    box-sizing: border-box; /* Include padding in width/height */
+}
+
+.promote-staff-container h1 {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.promote-staff-container h2{
+    margin: 0;
+    text-align: left;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.promote-staff-container form{
+    margin-top: 10px;
+}
+
+.user-list {
+    margin: 20px 0;
+}
+.user-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.user-item img {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    margin-right: 50px;
+}
+.user-item input[type="checkbox"] {
+    margin-left: 30px;
+    margin-right: 60px;
+    width: 20px;
+    height: 20px;
+}
+.role-drop {
+    margin-left: 30px;
+    margin-right: 60px;
+    width: 20px;
+    height: 20px;
+}
+.user-info {
+    flex: 1;
+    margin-left: 30px;
+}
+.user-info p {
+    margin: 2px 0;
+}
+
+.archive-staff {
+    height: auto; /* Adjust height based on content */
+    width: 95%;
+    background-color: rgba(255,255,255,0.13);
+    position: relative; /* Ensure positioning is relative to parent */
+    margin: 20px auto; /* Center and add margin */
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+    box-sizing: border-box; /* Include padding in width/height */
+}
+
+.archive-staff h1 {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.archive-staff h2{
+    margin: 0;
+    text-align: left;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.archive-staff form{
+    margin-top: 10px;
+}
+
+.bank-details-container {
+    height: auto; /* Adjust height based on content */
+    width: 95%;
+    background-color: rgba(255,255,255,0.13);
+    position: relative; /* Ensure positioning is relative to parent */
+    margin: 20px auto; /* Center and add margin */
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+    box-sizing: border-box; /* Include padding in width/height */
+}
+
+.bank-details-container h1 {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.bank-details-container h2{
+    margin: 0;
+    text-align: left;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.bank-details-container form{
+    margin-top: 10px;
+}
+
+.change-password-container{
+    height: auto; /* Adjust height based on content */
+    width: 95%;
+    background-color: rgba(255,255,255,0.13);
+    position: relative; /* Ensure positioning is relative to parent */
+    margin: 20px auto; /* Center and add margin */
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+    box-sizing: border-box; /* Include padding in width/height */
+}
+
+.change-password-container h1{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.change-password-container h2{
+    margin: 0;
+    text-align: left;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.change-password-container form{
+    margin-top: 10px;
+}
+.content-login {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    width: 500px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+.login-container{
+    height: auto; /* Adjust height based on content */
+    width: 95%;
+    background-color: rgba(255,255,255,0.13);
+    position: relative; /* Ensure positioning is relative to parent */
+    margin: 20px auto; /* Center and add margin */
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+    box-sizing: border-box; /* Include padding in width/height */
+}
+.login-container h1{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.login-container h2{
+    margin: 0;
+    text-align: left;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.login-container form{
+    margin-top: 10px;
+}
+.db-container{
+    height: auto; /* Adjust height based on content */
+    width: 70%;
+    background-color: rgba(255,255,255,0.13);
+    position: relative; /* Ensure positioning is relative to parent */
+    margin: 20px auto; /* Center and add margin */
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+    box-sizing: border-box; /* Include padding in width/height */
+}
+.db-container h1{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.db-container h2{
+    margin: 0;
+    text-align: left;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.db-container form{
+    margin-top: 10px;
+}
+.super-admin-registration {
+    height: auto; /* Adjust height based on content */
+    width: 95%;
+    background-color: rgba(255,255,255,0.13);
+    position: relative; /* Ensure positioning is relative to parent */
+    margin: 20px auto; /* Center and add margin */
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+    box-sizing: border-box; /* Include padding in width/height */
+}
+.super-admin-registration h1{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.super-admin-registration h2{
+    margin: 0;
+    text-align: left;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.super-admin-registration form{
+    margin-top: 10px;
+}
+
+.update-profile-container{
+    height: auto; /* Adjust height based on content */
+    width: 70%;
+    background-color: rgba(255,255,255,0.13);
+    position: relative; /* Ensure positioning is relative to parent */
+    margin: 20px auto; /* Center and add margin */
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+    box-sizing: border-box; /* Include padding in width/height */
+}
+.update-profile-container h1{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.update-profile-container h2{
+    margin: 0;
+    text-align: left;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.update-profile-container form{
+    margin-top: 10px;
+}
+.update-profile-container a{
+    border: 2px;
+    color: white;
+    background-color: #337ab7;
+}
+
+.manage-company{
+    height: auto; /* Adjust height based on content */
+    width: 70%;
+    background-color: rgba(255,255,255,0.13);
+    position: relative; /* Ensure positioning is relative to parent */
+    margin: 20px auto; /* Center and add margin */
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+    box-sizing: border-box; /* Include padding in width/height */
+}
+.manage-company h1{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.manage-company h2{
+    margin: 0;
+    text-align: left;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.manage-company form{
+    margin-top: 10px;
+}
+
+.news-container{
+    height: auto; /* Adjust height based on content */
+    width: 70%;
+    background-color: rgba(255,255,255,0.13);
+    position: relative; /* Ensure positioning is relative to parent */
+    margin: 20px auto; /* Center and add margin */
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+    box-sizing: border-box; /* Include padding in width/height */
+}
+.news-container h1{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.news-container h3{
+    margin: 0;
+    text-align: left;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+.news-container p{
+    color: white;
+}
+
+.news-container form{
+    margin-top: 10px;
+}
+.news-container a{
+    border: 2px;
+    color: white;
+    background-color: #337ab7;
+}
+
+input[type="submit"], button {
+    background: linear-gradient(to right, #007bff, #0056b3);
+    color: #fff;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input[type="submit"]:hover, button:hover {
+    background: linear-gradient(to right, #0056b3, #007bff);
+    transform: scale(1.05);
+}
+
+input[type="text"], input[type="password"], input[type="date"], input[type="email"], input[type="file"], textarea {
+    width: 100%;
+    padding: 14px;
+    margin: 8px 0 16px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: black;
+    height: auto;
+}
+input[type="file"] {
+    height: auto;
+    width: 100%;
+    padding: 14px;
+    margin: 8px 0 16px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: white;
+}
+.update-profile-container input[type="file"] {
+    height: auto;
+    width: 100%;
+    padding: 14px;
+    margin: 8px 0 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: white;
+}
+
+label {
+    color: white;
+    font-size: 26px;
+    text-align: left;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-x: auto; /* Add horizontal scroll if needed */
+}
+
+table, th, td {
+    border: 2px solid #ddd;
+}
+
+th, td {
+    padding: 14px;
+    text-align: left;
+    word-wrap: break-word; /* Allow text to wrap in cells */
+}
+
+th {
+    background: #007bff;
+    color: #fff;
+    font-weight: 600;
+}
+tr{
+    background: #b0b0b0;
+}
+tr:nth-child(even) {
+    background: #f4f4f4;
+}
+
+tr:hover {
+    background: #e2e2e2;
+}
+
+.highlight-red {
+    color: #dc3545;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+    justify-content: center; /* Center buttons horizontally */
+}
+
+/* Style individual buttons for consistency */
+.action-buttons form {
+    margin: 0;
+}
+
+.action-buttons input[type="submit"] {
+    background: linear-gradient(to right, #007bff, #0056b3);
+    color: #fff;
+    border: none;
+    padding: 10px 20px; /* Adjust padding as needed */
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.action-buttons input[type="submit"]:hover {
+    background: linear-gradient(to right, #0056b3, #007bff);
+    transform: scale(1.05);
+}
+.footer{
+    height: 100px;
+    background-color: #333; 
+    color: #fff; 
+    padding:20px; 
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.company-info{
+    text-align: left;
+}
+
+.copyright{
+    text-align: center;
+}
+
+/* Add this to your CSS file */
+.notification {
+    background-color: #ff9800;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+
+@media (min-width: 1281px) {
+    body {
+        height: 100%;
+        width: 100%;
+        font-family: 'Montserrat', sans-serif;
+        background: url("../images/bg.jpeg") no-repeat center center fixed;
+        background-size: cover; /* Ensures the background image covers the whole screen */
+    }
+
+    .content {
+        min-height: calc(100vh - 210px); /* Fixed the calc function */
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer {
+        height: 100px;
+        background-color: #333; 
+        color: #fff; 
+        padding: 20px; 
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        flex-shrink: 0; /* Prevents the footer from shrinking */
+    }
+}
+
+
+
+
+
+@media (max-width: 1000px) {
+    .archive-staff h1{
+        font-size: 24px;
+    }
+}
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .header .navbar-nav>li {
+        margin-right: 10px; /* Adjust spacing for smaller screens */
+    }
+
+    .details-container, .leave-container {
+        width: 80%; /* Ensure containers are full width on small screens */
+        padding: 1rem; /* Adjust padding for smaller screens */
+    }
+
+    .details-container {
+        flex-direction: column; /* Stack elements vertically on small screens */
+    }
+
+    .punch-button-container {
+        flex-direction: column; /* Stack buttons vertically on small screens */
+    }
+
+    .punch-button-container button {
+        margin-top: 10px;
+        width: 90%; /* Ensure buttons are full width */
+        padding: 1rem; /* Adjust padding for smaller screens */
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+    table {
+        display: block; /* Make the table block-level on smaller screens */
+        overflow-x: auto; /* Enable horizontal scrolling */
+        white-space: nowrap; /* Prevent text from wrapping */
+    }
+
+    th, td {
+        display: inline-block; /* Make table cells inline-block */
+        width: 150px; /* Set a fixed width for cells */
+    }
+    .action-buttons button{
+        padding: 2px 6px;
+    }
+    .content-login {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        width: 300px;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .login-container{
+        height: auto; /* Adjust height based on content */
+        width: auto;
+        background-color: rgba(255,255,255,0.13);
+        position: relative; /* Ensure positioning is relative to parent */
+        margin: 20px auto; /* Center and add margin */
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        border: 2px solid rgba(255,255,255,0.1);
+        box-shadow: 0 0 40px rgba(8,7,16,0.6);
+        padding: 50px 35px;
+        box-sizing: border-box; /* Include padding in width/height */
+    }
+    .login-container h1{
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        font-size: 32px;
+    }
+    
+    .login-container label{
+        margin: 0;
+        text-align: left;
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+    .login-container form{
+        margin-top: 10px;
+    }
+    
+}
+
+@media (min-width: 769px) {
+    .punch-button-container {
+        display: flex;
+        justify-content: center; /* Center buttons horizontally */
+        align-items: center; /* Center buttons vertically if needed */
+        flex-direction: row; /* Arrange buttons horizontally on larger screens */
+        gap: 1rem; /* Adjust spacing between buttons */
+        width: 100%; /* Ensure container takes full width if needed */
+    }
+    
+    .punch-button-container button {
+        width: auto;
+        min-width: 130px; /* Allow buttons to grow based on content */
+        padding: 14px; /* Ensure padding is consistent */
+    }
+    
+}
