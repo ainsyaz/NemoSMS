@@ -1,4 +1,5 @@
 <?php
+// this is a comment
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $database = $_POST['database'];
 
